@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
+import Lifecycle from './components/Lifecycle';
 // import FetchCard from './components/FetchCard';
-// import Lifecycle from './components/Lifecycle';
-import Resize from './components/Resize';
+// import Resize from './components/Resize';
 
 function App() {
   const [show, setShow] = useState(false);
   return (
     <div>
       <h1>useEffect</h1>
-      {/* <Lifecycle /> */}
-      {/* <FetchCard /> */}
       <button onClick={() => setShow(!show)}>Show/HIde</button>
-      {show && <Resize />}
+      {show && <Lifecycle />}
+      {/* <FetchCard /> */}
+      {/* {show && <Resize />} */}
     </div>
   );
 }
